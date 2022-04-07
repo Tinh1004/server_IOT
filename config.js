@@ -8,29 +8,30 @@ const {
     PORT,
     HOST,
     HOST_URL,
-    API_KEY,
-    AUTH_DOMAIN,
-    DATABASE_URL,
-    PROJECT_ID,
-    STORAGE_BUCKET,
-    MESSAGING_SENDER_ID,
-    APP_ID
 } = process.env;
 
 assert(PORT, 'PORT is required');
 assert(HOST, 'HOST is required');
+
+// API_KEY="AIzaSyCFkvTx55DvTZP01VjmlbkhQPUEb86XJTA"
+// AUTH_DOMAIN= "realtime-flutter-1b867.firebaseapp.com"
+// DATABASE_URL= "https://realtime-flutter-1b867-default-rtdb.firebaseio.com"
+// PROJECT_ID= "realtime-flutter-1b867"
+// STORAGE_BUCKET=  "realtime-flutter-1b867.appspot.com"
+// MESSAGING_SENDER_ID= "794380958759"
+// APP_ID= "1:794380958759:web:1111de432305e1ae9ae202"
 
 module.exports = {
     port: PORT,
     host: HOST,
     url: HOST_URL,
     firebaseConfig: {
-        apiKey: API_KEY,
-        authDomain: AUTH_DOMAIN,
-        databaseURL: DATABASE_URL,
-        projectId: PROJECT_ID,
-        storageBucket: STORAGE_BUCKET,
-        messagingSenderId: MESSAGING_SENDER_ID,
-        appId: APP_ID
+        apiKey: "AIzaSyCFkvTx55DvTZP01VjmlbkhQPUEb86XJTA",
+        authDomain: "realtime-flutter-1b867.firebaseapp.com",
+        databaseURL: "https://realtime-flutter-1b867-default-rtdb.firebaseio.com",
+        projectId: "realtime-flutter-1b867",
+        storageBucket: "realtime-flutter-1b867.appspot.com",
+        messagingSenderId: "794380958759",
+        appId: "1:794380958759:web:1111de432305e1ae9ae202"
     }
 }
