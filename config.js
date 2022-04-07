@@ -4,11 +4,11 @@ const assert = require('assert');
 
 dotenv.config();
 
-const {
-    PORT,
-    HOST,
-    HOST_URL,
-} = process.env;
+// const {
+//     PORT,
+//     HOST,
+//     HOST_URL,
+// } = process.env;
 
 assert(PORT, 'PORT is required');
 assert(HOST, 'HOST is required');
@@ -22,9 +22,9 @@ assert(HOST, 'HOST is required');
 // APP_ID= "1:794380958759:web:1111de432305e1ae9ae202"
 
 module.exports = {
-    port: PORT,
-    host: HOST,
-    url: HOST_URL,
+    port: 8080,
+    host: "localhost",
+    url: "http://localhost:8080",
     firebaseConfig: {
         apiKey: "AIzaSyCFkvTx55DvTZP01VjmlbkhQPUEb86XJTA",
         authDomain: "realtime-flutter-1b867.firebaseapp.com",
