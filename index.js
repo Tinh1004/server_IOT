@@ -67,7 +67,10 @@ setInterval(() => {
         })
 }, 1000);
 
-
+app.get('/',(req, res) => {
+    databaseDB.ref("notification/status").set("yes");
+    console.log("Yes")
+})
 
 
 app.listen(config.port, () => console.log('App is listening on url http://localhost:' + config.port));
