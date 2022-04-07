@@ -69,6 +69,7 @@ setInterval(() => {
 
 app.get('/',(req, res) => {
     databaseDB.ref("notification/status").set("yes");
+    res.send("SP")
     console.log("Yes")
 })
 
